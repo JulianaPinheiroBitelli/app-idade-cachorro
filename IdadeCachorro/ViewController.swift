@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var labelIdadeCachorro: UILabel!
     @IBOutlet weak var digitarIdadeTextField: UITextField!
     @IBOutlet weak var buttomOutlet: UIButton!
     @IBOutlet weak var resultadoLabel: UILabel!
@@ -18,10 +19,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         digitarIdadeTextField.keyboardType = .numberPad
         digitarIdadeTextField.delegate = self
+        self.view.backgroundColor =  UIColor(red: 249/255.0, green: 221/255.0, blue: 134/255.0, alpha: 1.0)
+        self.labelIdadeCachorro.backgroundColor = UIColor(red: 249/255.0, green: 221/255.0, blue: 134/255.0, alpha: 1.0)
+        self.digitarIdadeTextField.placeholder = "Ex: 10"
         
     }
     @IBAction func buttomAction(_ sender: UIButton) {
-        let idadeCachorro = Int(digitarIdadeTextField.text!)! * 7
+        let idadeCachorro = (Int(digitarIdadeTextField.text ?? "") ?? 0) * 7
         resultadoLabel.text = "A idade do seu cachorro é: \(String(idadeCachorro)) anos"
         digitarIdadeTextField.resignFirstResponder()
     }
