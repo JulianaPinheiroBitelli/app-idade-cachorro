@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IdadeCachorro" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2GK-zV-zDs">
+                                <rect key="frame" x="160" y="412" width="70" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gNl-hm-HK3">
+                                <rect key="frame" x="120" y="487" width="150" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="WfM-Hh-KXo"/>
+                                    <constraint firstAttribute="width" constant="150" id="ZTa-Pl-R6Z"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Decobrir a idade"/>
+                                <connections>
+                                    <action selector="buttomAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j53-XE-m7U"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cachorro" translatesAutoresizingMaskIntoConstraints="NO" id="oKy-XM-JK5">
+                                <rect key="frame" x="-15.666666666666657" y="121" width="421.33333333333326" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digite a idade do seu cachorro para descobrir a idade em anos humanos." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N13-iB-hPk">
+                                <rect key="frame" x="45" y="307" width="300" height="65"/>
+                                <color key="backgroundColor" red="0.97647058959999999" green="0.86666667460000002" blue="0.52549022440000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.94492092520000004" green="0.96269461700000003" blue="0.98808265029999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="19"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uLp-Hd-9HN">
+                                <rect key="frame" x="45" y="586" width="300" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="hie-pn-Ig9"/>
+                                    <constraint firstAttribute="width" constant="300" id="rIb-bL-A44"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="1" green="0.8688560533574109" blue="0.5283916285958552" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="0.80120642006802723" green="0.89798575680272108" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="N13-iB-hPk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="260" id="6Wm-vA-TWb"/>
+                            <constraint firstItem="2GK-zV-zDs" firstAttribute="top" secondItem="N13-iB-hPk" secondAttribute="bottom" constant="40" id="6gh-QJ-c7J"/>
+                            <constraint firstItem="uLp-Hd-9HN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ALg-6L-DTc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2GK-zV-zDs" secondAttribute="trailing" constant="160" id="AXP-0f-VKP"/>
+                            <constraint firstItem="2GK-zV-zDs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="160" id="GPD-kP-lzA"/>
+                            <constraint firstItem="uLp-Hd-9HN" firstAttribute="top" secondItem="gNl-hm-HK3" secondAttribute="bottom" constant="48" id="KFJ-nl-OPl"/>
+                            <constraint firstItem="gNl-hm-HK3" firstAttribute="top" secondItem="2GK-zV-zDs" secondAttribute="bottom" constant="41" id="Njt-5I-d2h"/>
+                            <constraint firstItem="N13-iB-hPk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="OvG-zm-qo7"/>
+                            <constraint firstItem="oKy-XM-JK5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-15.67" id="f2n-5h-uCr"/>
+                            <constraint firstItem="N13-iB-hPk" firstAttribute="top" secondItem="oKy-XM-JK5" secondAttribute="bottom" constant="58" id="iel-fQ-4Ws"/>
+                            <constraint firstItem="oKy-XM-JK5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="74" id="kVE-1C-Ggi"/>
+                            <constraint firstAttribute="trailing" secondItem="oKy-XM-JK5" secondAttribute="trailing" constant="-15.67" id="puE-kK-Dmu"/>
+                            <constraint firstItem="oKy-XM-JK5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rcY-Ek-sHa"/>
+                            <constraint firstAttribute="trailing" secondItem="N13-iB-hPk" secondAttribute="trailing" constant="45" id="wKB-OQ-hRT"/>
+                            <constraint firstItem="gNl-hm-HK3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xrh-OL-qkQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttomOutlet" destination="gNl-hm-HK3" id="nRW-T7-i2f"/>
+                        <outlet property="digitarIdadeTextField" destination="2GK-zV-zDs" id="N5t-Pa-erv"/>
+                        <outlet property="resultadoLabel" destination="uLp-Hd-9HN" id="yjY-Tg-PGO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="21.538461538461537" y="3.5545023696682461"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cachorro" width="421" height="404"/>
+    </resources>
+</document>
