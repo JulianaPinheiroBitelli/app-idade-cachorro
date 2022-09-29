@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     }
     @IBAction func buttomAction(_ sender: UIButton) {
         let idadeCachorro = Int(digitarIdadeTextField.text!)! * 7
-        resultadoLabel.text = "A idade do cachorro é: \(String(idadeCachorro)) anos"
+        resultadoLabel.text = "A idade do seu cachorro é: \(String(idadeCachorro)) anos"
         digitarIdadeTextField.resignFirstResponder()
     }
    
